@@ -1,4 +1,4 @@
-n = 4
+n = 5
 
 def isValid(n, maze, x, y, res):
     if x >= 0 and y >= 0 and x < n and y < n and maze[x][y] == 1 and res[x][y] == 0:
@@ -9,7 +9,7 @@ def isValid(n, maze, x, y, res):
 def RatMaze(n, maze, move_x, move_y, x, y, res):
     if x == n-1 and y == n-1:
         return True
-    for i in range(4):
+    for i in range(5):
         # Generate new value of x
         x_new = x + move_x[i]
   
